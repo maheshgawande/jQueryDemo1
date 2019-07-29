@@ -1,0 +1,84 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d3edf8;
+    text-align: center;
+}
+
+.container {
+    border: solid red;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.box-container {
+    height: 70px;
+    width: 70px;
+    border: solid 1px;
+    margin: 28vh auto;
+}
+
+.box {
+    height: 68px;
+    width: 67px;
+    background-color: skyblue;
+    margin: 0 auto;
+    position: relative;     /*position is necessary to declare while animating*/
+    font: bold 15px sans-serif;
+    line-height: 4;
+}
+
+.controls {
+    height: 150px;
+    width: 150px;
+    background-color: #51b8e1;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.controls > div {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.controls > div:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px blue;
+}
+
+.right, .left {
+    margin-top: 55px;
+}
+
+.up, .down {
+    margin-left: 55px;
+}
+
+.up {
+    background-image: url("button.png");
+}
+
+.right {
+    margin-left: 110px;
+    background-image: url("button.png");
+    transform: rotate(90deg)
+}
+
+.down {
+    margin-top: 110px;
+    background-image: url("button.png");
+    transform: rotate(180deg)
+}
+
+.left {
+    background-image: url("button.png");
+    transform: rotate(-90deg)
+}
